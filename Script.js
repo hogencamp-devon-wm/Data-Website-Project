@@ -1,7 +1,7 @@
 google.load('visualization', '1', {packages: ['corechart', 'bar']});
-google.setOnLoadCallback(drawBasic);
+google.setOnLoadCallback(drawBasic2);
 
-function drawBasic() {
+function drawBasic2() {
 
     var data = google.visualization.arrayToDataTable([
         ['Country', 'Count', ],
@@ -35,6 +35,9 @@ function drawBasic() {
 }
 
 
+
+
+
 google.load('visualization', '1', {packages: ['corechart', 'bar']});
 google.setOnLoadCallback(drawBasic);
 
@@ -64,4 +67,12 @@ function drawBasic() {
     var chart = new google.visualization.BarChart(document.getElementById('AppleChart'));
 
     chart.draw(data, options);
+}
+
+function InternetSource(){
+    alert("You are going to be taken the wolfram alpha where I got my sources.");   
+}
+
+function AppleSource(){
+    alert("You are going to be taken to apple where I got my sources.");   
 }
